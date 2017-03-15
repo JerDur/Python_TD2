@@ -1,7 +1,7 @@
 import sqlite3
 import csv
 
-conn = sqlite3.connect('/hometu/etudiants/b/l/E155781C/workspace/Semestre4/Prod_Logiciel/TD2/TD2_python.db');
+conn = sqlite3.connect('/hometu/etudiants/b/l/E155781C/workspace/Semestre4/Git/Python_TD2/BD/TD2_python.db');
 
 cur = conn.cursor()
 
@@ -10,7 +10,7 @@ liste = []
 #conn.execute("CREATE TABLE equipements_activites(ComInsee double,ComLib text,EquipementId double,EquNbEquIdentique double,ActCode double,ActLib text,EquActivitePraticable text,EquActivitePratique text,EquActiviteSalleSpe text,ActNivLib text)")
 
 
-with open('/hometu/etudiants/b/l/E155781C/workspace/Semestre4/Prod_Logiciel/TD2/J334_equipements_activites.csv', 'r') as csvfile:
+with open('/hometu/etudiants/b/l/E155781C/workspace/Semestre4/Git/Python_TD2/CSV/J334_equipements_activites.csv', 'r') as csvfile:
     reader = csv.reader(csvfile, delimiter=',', quotechar='*')
     for row in reader:
         liste.append(row)
